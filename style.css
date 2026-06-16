@@ -1092,6 +1092,104 @@ body.no-scroll {
     border: 2px solid var(--secondary-color);
 }
 
+/* Premium Contact & Quotation Form Section */
+.form-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.form-instructions-text {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.premium-form {
+    background-color: var(--bg-card);
+    padding: 3.5rem;
+    border-radius: var(--border-radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-field-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+.form-field-label {
+    font-family: var(--font-title);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--primary-color);
+}
+
+.premium-form .form-input-field {
+    width: 100%;
+    padding: 0.95rem 1.2rem;
+    background-color: rgba(255, 255, 255, 0.02);
+    color: var(--text-light);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-size: 0.98rem;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.premium-form .form-input-field::placeholder {
+    color: #64748b;
+}
+
+.premium-form .form-input-field:focus {
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: var(--shadow-glow-gold);
+    border-color: var(--primary-color);
+}
+
+.premium-form .form-textarea {
+    resize: none;
+    height: 120px;
+}
+
+.btn-form-submit {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    box-shadow: var(--shadow-glow-gold);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    text-transform: uppercase;
+    transition: var(--transition-smooth);
+}
+
+.btn-form-submit:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.5);
+}
+
+@media (max-width: 768px) {
+    .premium-form {
+        padding: 2.2rem;
+    }
+}
+
 /* Spring-Click Microinteraction on Active */
 .btn-primary:active,
 .btn-cta:active,

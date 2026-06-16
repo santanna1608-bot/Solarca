@@ -295,6 +295,44 @@
             </div>
         </section>
 
+        <!-- SEÇÃO DE ORÇAMENTO (FORMULÁRIO DEDICADO) -->
+        <section class="section section-dark-1 reveal" id="contato">
+            <div class="container">
+                <div class="section-title-container">
+                    <span class="section-subtitle-badge">Contato Direto</span>
+                    <h2 class="section-title">Solicite um Orçamento</h2>
+                </div>
+                
+                <div class="form-container">
+                    <p class="form-instructions-text">Preencha os dados abaixo e entraremos em contato o mais breve possível para planejar a sua automação inteligente sob medida.</p>
+                    
+                    <form action="#" method="POST" onsubmit="enviarParaWhatsApp(event);" class="premium-form">
+                        <div class="form-group-row">
+                            <div class="form-field-wrapper">
+                                <label for="form-name" class="form-field-label">Seu Nome</label>
+                                <input type="text" id="form-name" placeholder="Digite seu nome completo" class="form-input-field" required>
+                            </div>
+                            <div class="form-field-wrapper">
+                                <label for="form-contact" class="form-field-label">WhatsApp ou E-mail</label>
+                                <input type="text" id="form-contact" placeholder="DDD + Telefone ou E-mail" class="form-input-field" required>
+                            </div>
+                        </div>
+                        <div class="form-group-full">
+                            <label for="form-subject" class="form-field-label">Assunto</label>
+                            <input type="text" id="form-subject" placeholder="Ex: Automação Residencial Completa" class="form-input-field" required>
+                        </div>
+                        <div class="form-group-full">
+                            <label for="form-message" class="form-field-label">Mensagem / Necessidades do Projeto</label>
+                            <textarea id="form-message" placeholder="Conte-nos sobre a sua necessidade ou quais cômodos deseja automatizar..." class="form-input-field form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-form-submit">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- FOOTER - Marca e navegação integradas em colunas simples -->
@@ -367,10 +405,10 @@
         function enviarParaWhatsApp(event) {
             event.preventDefault();
             const form = event.target;
-            const nome = form.querySelector('input[placeholder="Seu nome"]').value;
-            const contato = form.querySelector('input[placeholder="WhatsApp ou E-mail"]').value;
-            const assunto = form.querySelector('input[placeholder="Assunto (ex: Automação Residencial)"]').value;
-            const mensagem = form.querySelector('textarea[placeholder="Fale sobre o seu projeto ou necessidade..."]').value;
+            const nome = form.querySelector('#form-name').value;
+            const contato = form.querySelector('#form-contact').value;
+            const assunto = form.querySelector('#form-subject').value;
+            const mensagem = form.querySelector('#form-message').value;
             
             const texto = `Olá! Gostaria de solicitar um orçamento:\n\n*Nome:* ${nome}\n*Contato:* ${contato}\n*Assunto:* ${assunto}\n*Mensagem:* ${mensagem}`;
             const textoCodificado = encodeURIComponent(texto);

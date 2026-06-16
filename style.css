@@ -815,9 +815,16 @@ body.no-scroll {
 
 /* Left side of Footer: text/brand and navigation */
 .footer-left-info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2.5rem;
+}
+
+@media (min-width: 600px) {
+    .footer-left-info {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 3rem;
+    }
 }
 
 .footer-brand {
@@ -855,9 +862,41 @@ body.no-scroll {
 }
 
 .footer-desc {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
-    line-height: 1.8;
+    line-height: 1.7;
+}
+
+.footer-social-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.social-icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-glow-gold);
+}
+
+.social-icon-btn:active {
+    transform: scale(0.92) translateY(-1px);
 }
 
 .footer-nav-container {
@@ -874,20 +913,37 @@ body.no-scroll {
     color: var(--primary-color);
 }
 
-.footer-nav {
+.footer-nav-vertical {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 0.9rem;
 }
 
 .footer-nav-link {
     font-size: 0.95rem;
     color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), color 0.3s ease;
+}
+
+.footer-nav-link i {
+    font-size: 0.65rem;
+    color: var(--primary-color);
+    opacity: 0.6;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease;
 }
 
 .footer-nav-link:hover {
     color: var(--text-light);
+    transform: translateX(4px);
+}
+
+.footer-nav-link:hover i {
+    opacity: 1;
+    transform: translateX(2px);
 }
 
 /* Right side of Footer: contact form matching reference */

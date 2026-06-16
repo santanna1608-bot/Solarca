@@ -297,70 +297,47 @@
 
     </main>
 
-    <!-- FOOTER - Formulario e Marca integrados estilo imagem de referencia -->
+    <!-- FOOTER - Marca e navegação integradas em colunas simples -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content-grid">
                 
-                <!-- Left Column: Branding and Links -->
-                <div class="footer-left-info">
-                    <div class="footer-brand">
-                        <div class="footer-logo">
-                            <img src="assets/logo.jpg" alt="Solarca Logo" class="footer-logo-img">
-                            <div class="logo-title-group">
-                                <span class="logo-main-title">SOLARCA</span>
-                                <span class="logo-subtitle">Soluções Inteligentes</span>
-                            </div>
-                        </div>
-                        <p class="footer-desc">
-                            Especialistas em transformar ambientes através de tecnologia de ponta, automação integrada, conforto e segurança sob medida para sua residência, comércio ou empresa.
-                        </p>
-                        <!-- Links de Redes Sociais no Footer -->
-                        <div class="footer-social-links">
-                            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Siga-nos no Instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="https://wa.me/5524992823284?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Fale no WhatsApp">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                            <a href="mailto:contato@solarca.com.br" class="social-icon-btn" aria-label="Envie um E-mail">
-                                <i class="fa-regular fa-envelope"></i>
-                            </a>
+                <!-- Coluna 1: Branding e Redes Sociais -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.jpg" alt="Solarca Logo" class="footer-logo-img">
+                        <div class="logo-title-group">
+                            <span class="logo-main-title">SOLARCA</span>
+                            <span class="logo-subtitle">Soluções Inteligentes</span>
                         </div>
                     </div>
-                    
-                    <div class="footer-nav-container">
-                        <h3 class="footer-links-title">Navegação</h3>
-                        <ul class="footer-nav-vertical">
-                            <li><a href="#home" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Início</a></li>
-                            <li><a href="#produtos" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Produtos</a></li>
-                            <li><a href="#servicos" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Serviços</a></li>
-                            <li><a href="#localizacao" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Área de Atuação</a></li>
-                            <li><a href="#contato" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Orçamento</a></li>
-                        </ul>
+                    <p class="footer-desc">
+                        Especialistas em transformar ambientes através de tecnologia de ponta, automação integrada, conforto e segurança sob medida para sua residência, comércio ou empresa.
+                    </p>
+                    <!-- Links de Redes Sociais no Footer -->
+                    <div class="footer-social-links">
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Siga-nos no Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5524992823284?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Fale no WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:contato@solarca.com.br" class="social-icon-btn" aria-label="Envie um E-mail">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
-
-                <!-- Right Column: Contact Form matching reference image -->
-                <div class="footer-right-form reveal" id="contato">
-                    <h3 class="footer-form-title">Solicite um Orçamento</h3>
-                    <p class="footer-form-subtitle">Preencha os dados abaixo ou fale conosco diretamente via WhatsApp: <strong>(24) 99282-3284</strong>.</p>
-                    
-                    <form action="#" method="POST" onsubmit="enviarParaWhatsApp(event);">
-                        <div class="form-group-row">
-                            <input type="text" placeholder="Seu nome" class="form-input-field" required>
-                            <input type="text" placeholder="WhatsApp ou E-mail" class="form-input-field" required>
-                        </div>
-                        <div class="form-group-full">
-                            <input type="text" placeholder="Assunto (ex: Automação Residencial)" class="form-input-field" required>
-                        </div>
-                        <div class="form-group-full">
-                            <textarea placeholder="Fale sobre o seu projeto ou necessidade..." class="form-input-field form-textarea" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-form-submit">
-                            <i class="fa-solid fa-paper-plane"></i> Enviar via WhatsApp
-                        </button>
-                    </form>
+                
+                <!-- Coluna 2: Links de Navegação -->
+                <div class="footer-nav-container">
+                    <h3 class="footer-links-title">Navegação</h3>
+                    <ul class="footer-nav-vertical">
+                        <li><a href="#home" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Início</a></li>
+                        <li><a href="#produtos" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Produtos</a></li>
+                        <li><a href="#servicos" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Serviços</a></li>
+                        <li><a href="#localizacao" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Área de Atuação</a></li>
+                        <li><a href="#contato" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Orçamento</a></li>
+                    </ul>
                 </div>
 
             </div>

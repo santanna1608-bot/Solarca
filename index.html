@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solarca Soluções Inteligentes - Automação residencial, comercial e empresarial de alto padrão. Atendimento em Volta Redonda, Barra Mansa e região.">
+    <title>Solarca - Soluções Inteligentes | Automação Residencial e Comercial</title>
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo-text" aria-label="Solarca Home">
+                <img src="assets/logo.jpg" alt="Solarca Logo" class="logo-img">
+                <div class="logo-title-group">
+                    <span class="logo-main-title">SOLARCA</span>
+                    <span class="logo-subtitle">Soluções Inteligentes</span>
+                </div>
+            </a>
+            
+            <!-- Botão Menu Hambúrguer para Mobile -->
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Abrir Menu de Navegação">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav class="header-nav" id="main-navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#localizacao" class="nav-link">Área de Atuação</a></li>
+                    <li><a href="#contato" class="nav-link">Orçamento</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <a href="https://wa.me/5524992823284?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20as%20soluções%20de%20automação." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-whatsapp-header"
+                   id="header-cta-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-container">
+                <!-- Logotipo centralizado e estilizado no Hero -->
+                <div class="hero-logo-container">
+                    <div class="hero-logo">
+                        <img src="assets/logo.jpg" alt="Solarca Logo" class="hero-logo-img">
+                        <div class="logo-title-group">
+                            <span class="logo-main-title">SOLARCA</span>
+                            <span class="logo-subtitle">Soluções Inteligentes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="hero-h1">DÊ <span class="highlight-gold">INTELIGÊNCIA</span> PARA SUA CASA</h1>
+                <p class="hero-subtitle">
+                    Soluções completas em automação para ambientes: 
+                    <strong>Residencial</strong> • <strong>Comercial</strong> • <strong>Empresarial</strong>.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="https://wa.me/5524992823284?text=Olá!%20Quero%20entrar%20em%20contato%20para%20conhecer%20os%20serviços." 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn-primary"
+                       id="hero-cta-button">
+                        ENTRE EM CONTATO
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PRODUTOS -->
+        <section class="section section-dark-1" id="produtos">
+            <div class="container">
+                <div class="section-title-container reveal">
+                    <span class="section-subtitle-badge">Tecnologia Avançada</span>
+                    <h2 class="section-title">Nossos Produtos</h2>
+                </div>
+                
+                <div class="grid-container reveal">
+                    <!-- Produto 1 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=800" alt="Rede de Wi-Fi de Alto Desempenho" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Rede de Wi-Fi de Alto Desempenho</h3>
+                        </div>
+                    </article>
+
+                    <!-- Produto 2 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=800" alt="Cortinas e Persianas Automatizadas" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Cortinas e Persianas Automatizadas</h3>
+                        </div>
+                    </article>
+
+                    <!-- Produto 3 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800" alt="Fechadura Digital" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Fechadura Digital</h3>
+                        </div>
+                    </article>
+
+                    <!-- Produto 4 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1545048702-79362596cdc9?q=80&w=800" alt="Sound Bar" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Sound Bar</h3>
+                        </div>
+                    </article>
+
+                    <!-- Produto 5 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519643381401-22c77e60520e?q=80&w=800" alt="Automatização de Som Ambiente" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Automatização de Som Ambiente</h3>
+                        </div>
+                    </article>
+
+                    <!-- Produto 6 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?q=80&w=800" alt="Iluminação Inteligente" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Iluminação Inteligente</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER CTA 1 -->
+        <section class="cta-banner" id="contato-produtos">
+            <div class="cta-overlay"></div>
+            <div class="container cta-container">
+                <h2 class="cta-text">Entre em contato e saiba mais sobre os nossos produtos</h2>
+                <a href="https://wa.me/5524992823284?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Solarca." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-cta"
+                   id="cta-produtos-btn">
+                    Fale Conosco
+                </a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE SERVIÇOS -->
+        <section class="section section-dark-2" id="servicos">
+            <div class="container">
+                <div class="section-title-container reveal">
+                    <span class="section-subtitle-badge">Soluções Completas</span>
+                    <h2 class="section-title">Nossos Serviços</h2>
+                </div>
+                
+                <div class="grid-container reveal">
+                    <!-- Serviço 1 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800" alt="Projetos de Automação Residencial" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Projetos de Automação Residencial</h3>
+                        </div>
+                    </article>
+
+                    <!-- Serviço 2 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=800" alt="Circuito Fechado de TV" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Circuito Fechado de TV</h3>
+                        </div>
+                    </article>
+
+                    <!-- Serviço 3 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=800" alt="Áudio e Som Ambiente" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Áudio e Som Ambiente</h3>
+                        </div>
+                    </article>
+
+                    <!-- Serviço 4 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=800" alt="Sala de Cinema" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Sala de Cinema</h3>
+                        </div>
+                    </article>
+
+                    <!-- Serviço 5 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=800" alt="Flap de TV" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Flap de TV</h3>
+                        </div>
+                    </article>
+
+                    <!-- Serviço 6 -->
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=800" alt="Vídeo Inteligente" class="card-img" loading="lazy">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-bottom-bar">
+                            <h3 class="card-title">Vídeo Inteligente</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER CTA 2 -->
+        <section class="cta-banner" id="contato-servicos">
+            <div class="cta-overlay"></div>
+            <div class="container cta-container">
+                <h2 class="cta-text">Entre em contato e saiba mais sobre os nossos serviços</h2>
+                <a href="https://wa.me/5524992823284?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Solarca." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-cta"
+                   id="cta-servicos-btn">
+                    Entre em Contato
+                </a>
+            </div>
+        </section>
+
+        <!-- LOCALIZAÇÃO -->
+        <section class="location-section reveal" id="localizacao">
+            <div class="container">
+                <h2 class="location-title">ATENDEMOS SOMENTE EM DOMICÍLIO</h2>
+                <p class="location-subtitle">ATUAMOS EM:</p>
+                
+                <div class="tags-container reveal">
+                    <span class="location-tag">Volta Redonda</span>
+                    <span class="location-tag">Barra Mansa</span>
+                    <span class="location-tag">Resende</span>
+                    <span class="location-tag">Angra dos Reis</span>
+                    <span class="location-tag">Paraty</span>
+                    <span class="location-tag">Mangaratiba</span>
+                    <span class="location-tag">Barra do Piraí</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER - Formulario e Marca integrados estilo imagem de referencia -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content-grid">
+                
+                <!-- Left Column: Branding and Links -->
+                <div class="footer-left-info">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="assets/logo.jpg" alt="Solarca Logo" class="footer-logo-img">
+                            <div class="logo-title-group">
+                                <span class="logo-main-title">SOLARCA</span>
+                                <span class="logo-subtitle">Soluções Inteligentes</span>
+                            </div>
+                        </div>
+                        <p class="footer-desc">
+                            Especialistas em transformar ambientes através de tecnologia de ponta, automação integrada, conforto e segurança sob medida para sua residência, comércio ou empresa. Atendimento totalmente personalizado em domicílio.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-nav-container">
+                        <h3 class="footer-links-title">Navegação</h3>
+                        <ul class="footer-nav">
+                            <li><a href="#home" class="footer-nav-link">Início</a></li>
+                            <li><a href="#produtos" class="footer-nav-link">Produtos</a></li>
+                            <li><a href="#servicos" class="footer-nav-link">Serviços</a></li>
+                            <li><a href="#localizacao" class="footer-nav-link">Área de Atuação</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form matching reference image -->
+                <div class="footer-right-form reveal" id="contato">
+                    <h3 class="footer-form-title">Solicite um Orçamento</h3>
+                    <p class="footer-form-subtitle">Preencha os dados abaixo ou fale conosco diretamente via WhatsApp: <strong>(24) 99282-3284</strong>.</p>
+                    
+                    <form action="#" method="POST" onsubmit="enviarParaWhatsApp(event);">
+                        <div class="form-group-row">
+                            <input type="text" placeholder="Seu nome" class="form-input-field" required>
+                            <input type="text" placeholder="WhatsApp ou E-mail" class="form-input-field" required>
+                        </div>
+                        <div class="form-group-full">
+                            <input type="text" placeholder="Assunto (ex: Automação Residencial)" class="form-input-field" required>
+                        </div>
+                        <div class="form-group-full">
+                            <textarea placeholder="Fale sobre o seu projeto ou necessidade..." class="form-input-field form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-form-submit">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+            
+            <!-- Bottom bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Solarca Soluções Inteligentes. Todos os direitos reservados.</p>
+                <p class="footer-dev">Desenvolvido por <a href="#" target="_blank" rel="noopener noreferrer">LF7 Marketing & IA</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTAO WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5524992823284?text=Olá!%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20automação." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-float-btn"
+       id="whatsapp-float-button"
+       aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-online-dot"></span>
+    </a>
+
+    <!-- JAVASCRIPT SIMPLES PARA INTERAÇÃO PREMIUM -->
+    <script>
+        // Função para recolher dados do formulário e enviar via WhatsApp
+        function enviarParaWhatsApp(event) {
+            event.preventDefault();
+            const form = event.target;
+            const nome = form.querySelector('input[placeholder="Seu nome"]').value;
+            const contato = form.querySelector('input[placeholder="WhatsApp ou E-mail"]').value;
+            const assunto = form.querySelector('input[placeholder="Assunto (ex: Automação Residencial)"]').value;
+            const mensagem = form.querySelector('textarea[placeholder="Fale sobre o seu projeto ou necessidade..."]').value;
+            
+            const texto = `Olá! Gostaria de solicitar um orçamento:\n\n*Nome:* ${nome}\n*Contato:* ${contato}\n*Assunto:* ${assunto}\n*Mensagem:* ${mensagem}`;
+            const textoCodificado = encodeURIComponent(texto);
+            const url = `https://wa.me/5524992823284?text=${textoCodificado}`;
+            
+            window.open(url, '_blank');
+        }
+
+        // Controle do Menu Hambúrguer Móvel
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.getElementById('menu-toggle-btn');
+            const mainNav = document.getElementById('main-navigation');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', () => {
+                    menuToggle.classList.toggle('active');
+                    mainNav.classList.toggle('active');
+                    document.body.classList.toggle('no-scroll');
+                });
+                
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuToggle.classList.remove('active');
+                        mainNav.classList.remove('active');
+                        document.body.classList.remove('no-scroll');
+                    });
+                });
+            }
+        });
+
+        // Alteração sutil do cabeçalho ao rolar a página para manter contraste
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer para Scroll Reveal
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("revealed");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const revealElements = document.querySelectorAll(".reveal");
+            revealElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
